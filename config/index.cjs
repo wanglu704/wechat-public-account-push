@@ -13,8 +13,8 @@ const USER_CONFIG = {
   // 使用微信测试号：公众号APP_SECRET
   APP_SECRET: 'efaf625c926e5f08f9eac276d99af423',
 
-  PROVINCE: '广东',
-  CITY: '广州',
+  PROVINCE: '北京',
+  CITY: '北京',
 
   USERS: [
     {
@@ -29,7 +29,7 @@ const USER_CONFIG = {
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
-          type: '*生日', name: '璐璐', year: '1992', date: '19-09',
+          type: '*生日', name: '璐璐', year: '1992', date: '12-09',
         },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {
