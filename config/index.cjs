@@ -72,13 +72,13 @@ const USER_CONFIG = {
       // 想要发送的人的名字
       name: '宝贝',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'odCqD6o6Vj1xZ2y701GI0pNjG9nM',
+      id: 'odCqD6mrqCKG0_uCP3_0n9YNN7Fw',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: 'mE3HAieoehIG6YwHt_m-iS4Vv73P6Xl-lnPhDF50UB8',
+      useTemplateId: '6Xl1CvkaOOZCF7YFFD22lx3gJdjOaCtwYnDj_sZrXxc',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
-      province: '广东',
+      province: '北京',
       // 所在城市或县区
-      city: '广州',
+      city: '北京',
       horoscopeDate: '12-09',
       festivals: [
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
@@ -90,7 +90,10 @@ const USER_CONFIG = {
           type: '生日', name: '飞飞', year: '2001', date: '04-10',
         },
         {
-          type: '*生日', name: '妈妈', year: '1973', date: '02-04',
+          type: '*生日', name: '妈妈', year: '1968', date: '02-25',
+        },
+        {
+          type: '*生日', name: '爸爸', year: '1966', date: '04-01',
         },
         {
           type: '节日', name: '相识纪念日', year: '2022', date: '11-21',
