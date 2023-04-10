@@ -15,6 +15,57 @@ const USER_CONFIG = {
 
   PROVINCE: '北京',
   CITY: '北京',
+  
+    // 功能开关,打开：true，关闭：false
+  SWITCH: {
+    /** 每日天气 */
+    // 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    weather: true,
+
+    /** 节假日 */
+    // 下一休息日综合提醒, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    holidaytts: true,
+
+    /** 每日N句 */
+    // 金山每日一句, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    CIBA: true,
+    
+    // 每日一言, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    oneTalk: true,
+    
+    // 土味情话(彩虹屁), 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    earthyLoveWords: true,
+    
+    // 朋友圈文案, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    momentCopyrighting: true,
+    
+    // 毒鸡汤, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    poisonChickenSoup: true,
+    
+    // 古诗古文, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    poetry: true,
+
+    /** 星座运势 */
+    // 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    horoscope: true,
+  
+    /** 生日消息和节日消息 */
+    // 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    birthdayMessage: true,
+  
+    /** 学生课表 */
+    // 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    courseSchedule: false,
+  },
+  
+    /** 是否给文字设置多彩颜色, 和emoji不兼容 */
+  // 如果您使用了微信测试号的模板中含有emoji表情，请填 false
+  IS_SHOW_COLOR: true,
+  
+  /** 每日一言 */
+  // 每日一言的内容类型
+  // 可以填写【动画，漫画，游戏，小说，原创，网络，其他】； 随机则填写 ""
+  LITERARY_PREFERENCE: '',
 
   USERS: [
     {
@@ -23,13 +74,26 @@ const USER_CONFIG = {
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'odCqD6mrqCKG0_uCP3_0n9YNN7Fw',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: '1Lud7-D-PBTk4cNAwlD7we-4AwjTFke1T1_uXnGnjwE',
+      useTemplateId: '7Fv5TR1wAarn5XypLWOp2r2VLloQ5WOIs9Eg3P8itmY',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
+      province: '广东',
+      // 所在城市或县区
+      city: '广州',
+      province1: '北京',
+      // 所在城市或县区
+      city1: '北京',
       horoscopeDate: '12-09',
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
-          type: '*生日', name: '璐璐', year: '1992', date: '12-09',
+          type: '*生日', name: '璐璐', year: '1992', date: '11-16',
+        },
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        {
+          type: '生日', name: '璐璐', year: '1992', date: '12-09',
+        },
+        {
+          type: '*生日', name: '飞飞', year: '2001', date: '03-17',
         },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {
@@ -37,14 +101,18 @@ const USER_CONFIG = {
         },
         {
           type: '节日', name: '相识纪念日', year: '2022', date: '11-21',
-        },
+        }
       ],
       // 我们在一起已经有xxxx天了的配置
       customizedDateList: [
         // 在一起的日子
         { keyword: 'love_day', date: '2023-01-01' },
-        // 结婚纪念日
-        { keyword: 'marry_day', date: '2022-11-21' },
+        // 在一起的日子
+        { keyword: 'lulu_day', date: '1992-12-09' },
+        // 退伍日
+        { keyword: 'feifei_day', date: '2001-04-10' },
+        // 退伍日
+        { keyword: 'ex_day', date: '2023-09-01' }
       ],
     },
   ],
